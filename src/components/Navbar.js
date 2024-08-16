@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Container, Nav, Button, Form, FormControl, Modal, Tab, Nav as NavTabs } from 'react-bootstrap';
+import { Breadcrumb } from 'react-bootstrap';
 function DashboardNavbar() {
   const [show, setShow] = useState(false);
 
@@ -10,7 +11,10 @@ function DashboardNavbar() {
     <>
       <Navbar bg="light" expand="lg" className="shadow-sm">
         <Container fluid>
-          <Navbar.Brand href="#">Dashboard V2</Navbar.Brand>
+        <Breadcrumb>
+      <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+      <Breadcrumb.Item href="#" active>Dashboard V2</Breadcrumb.Item>
+    </Breadcrumb>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Form className="d-flex mx-auto">
