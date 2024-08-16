@@ -52,7 +52,9 @@ function Dashboard() {
         </Col>
         <Col md={4}>
           <Card className="shadow-sm mb-4 text-center">
-            <Button variant="light">+ Add Widget</Button>
+          <Card.Body>
+          <Button variant="light">+ Add Widget</Button>
+            </Card.Body>
           </Card>
         </Col>
       </Row>
@@ -78,7 +80,9 @@ function Dashboard() {
         </Col>
         <Col md={4}>
           <Card className="shadow-sm mb-4 text-center">
-            <Button variant="light">+ Add Widget</Button>
+          <Card.Body>
+          <Button variant="light">+ Add Widget</Button>
+            </Card.Body>
           </Card>
         </Col>
       </Row>
